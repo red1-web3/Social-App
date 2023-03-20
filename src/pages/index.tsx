@@ -1,7 +1,10 @@
+import Layout from "@components/Layout";
+import Home from "@views/Home";
 import Head from "next/head";
-import HomePage from "@/views/Home";
+import { ReactElement } from "react";
+import { NextPageWithLayout } from "src/models/Global";
 
-export default function Home() {
+const HomePage: NextPageWithLayout = () => {
   return (
     <>
       <Head>
@@ -11,8 +14,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.jpg" />
       </Head>
       <>
-        <HomePage />
+        <Home />
       </>
     </>
   );
-}
+};
+
+HomePage.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <Layout>
+      <div>{page}</div>
+    </Layout>
+  );
+};
+
+export default HomePage;
