@@ -3,5 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-neutral-900;
+  @apply bg-dark-700;
+
+  /* color: #464646; */
 }

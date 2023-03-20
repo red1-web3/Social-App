@@ -22,7 +22,7 @@ function Layout({
           {isRightSideBar && (
             <div
               style={{ marginTop: headerHeight + 20 }}
-              className="fixed right-8 top-0 w-[350px] h-full bg-white dark:bg-bodyBlack"
+              className="fixed right-8 top-0 w-[350px] h-full bg-white dark:bg-dark-500"
             ></div>
           )}
         </main>
