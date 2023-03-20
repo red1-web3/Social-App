@@ -1,5 +1,6 @@
 import Header from "@components/Header";
 import NavBar from "@components/NavBar";
+import { useHeaderHeight } from "@state/index";
 import React, { ReactNode } from "react";
 
 function Layout({
@@ -9,6 +10,8 @@ function Layout({
   children: ReactNode;
   isRightSideBar?: boolean;
 }) {
+  const [headerHeight, setHeaderHeight] = useHeaderHeight();
+
   return (
     <>
       <NavBar />
@@ -17,7 +20,10 @@ function Layout({
         <main className="w-full min-h-screen bg-slate-900 px-8 p-5">
           {children}
           {isRightSideBar && (
-            <div className="fixed right-8 top-5 w-[300px] h-full bg-red-600"></div>
+            <div
+              style={{ marginTop: headerHeight + 20 }}
+              className="fixed right-8 top-0 w-[350px] h-full bg-red-600"
+            ></div>
           )}
         </main>
       </div>

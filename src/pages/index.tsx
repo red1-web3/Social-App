@@ -22,7 +22,7 @@ const HomePage: NextPageWithLayout = () => {
 
 HomePage.getLayout = function getLayout(page: ReactElement) {
   return (
-    <Layout>
+    <Layout isRightSideBar>
       <div>{page}</div>
     </Layout>
   );
