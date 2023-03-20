@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "../styles/globals.css";
 import Layout from "@components/Layout";
 import { AppPropsWithLayout } from "src/models/Global";
 
