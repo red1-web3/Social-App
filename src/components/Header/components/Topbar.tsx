@@ -26,45 +26,65 @@ function Topbar() {
     top: 0,
     width: 0,
   });
-  console.log({ backgroundProps });
-  const _anchor = useRef<(HTMLLIElement | null)[]>([]);
+  const _anchor = useRef<HTMLLIElement[]>([]);
+  const _activeAnchorBg = useRef<HTMLLIElement>(null!);
+  const _anchorParent = useRef<HTMLUListElement>(null!);
+
   function clickAnchor(i: number) {
+    const { height, left, width, top } =
+      _anchor.current[i].getBoundingClientRect();
+
+    _activeAnchorBg.current.style.transition = "300ms";
+    _activeAnchorBg.current.style.transitionProperty = "all";
+
     setActive(i);
     setBackgroundProps({
-      height: _anchor.current?.[i]?.getBoundingClientRect().height || 0,
-      width: _anchor.current?.[i]?.getBoundingClientRect().width || 0,
-      top: _anchor.current?.[i]?.getBoundingClientRect().top || 0,
-      left: _anchor.current?.[i]?.getBoundingClientRect().left || 0,
+      height: height,
+      width: width,
+      top: top,
+      left: left,
     });
   }
 
   useEffect(() => {
+    const { height, left, width, top } =
+      _anchor.current[active].getBoundingClientRect();
     setBackgroundProps({
-      height: _anchor.current?.[active]?.getBoundingClientRect().height || 0,
-      width: _anchor.current?.[active]?.getBoundingClientRect().width || 0,
-      top: _anchor.current?.[active]?.getBoundingClientRect().top || 0,
-      left: _anchor.current?.[active]?.getBoundingClientRect().left || 0,
+      height: height,
+      width: width,
+      top: top,
+      left: left,
     });
   }, []);
 
   return (
-    <ul className="relative flex items-center gap-x-3 dark:text-white text-sm dark:bg-dark-400 p-1 rounded-md">
+    <ul
+      ref={_anchorParent}
+      className="relative flex items-center gap-x-3 dark:text-white text-sm dark:bg-dark-400 p-1 rounded-md"
+    >
       {topBarData.map((data, i) => (
         <Anchor
           data={data}
           key={i}
           onClick={() => clickAnchor(i)}
-          ref={(el) => (_anchor.current[i] = el)}
+          ref={(el) => {
+            if (el !== null) {
+              _anchor.current[i] = el;
+            }
+          }}
         />
       ))}
       <li
+        ref={_activeAnchorBg}
         style={{
           top: 0,
-          left: backgroundProps.left - 477,
+          left:
+            backgroundProps.left -
+            _anchorParent.current?.getBoundingClientRect().left,
           height: backgroundProps.height,
           width: backgroundProps.width,
         }}
-        className="bg-dark-300 absolute mt-1 duration-300 rounded-md z-[1]"
+        className="bg-dark-300 absolute mt-1 rounded-md z-[1]"
       ></li>
     </ul>
   );
