@@ -1,6 +1,7 @@
 import Home from "@components/Icons/Home";
 import { useHeaderHeight } from "@state/index";
 import React, { useEffect, useRef } from "react";
+import PorfilePart from "./components/PorfilePart";
 import Topbar from "./components/Topbar";
 
 function Header() {
@@ -24,7 +25,9 @@ function Header() {
           </div>
           <Topbar />
         </div>
-        <div className="shrink-0"></div>
+        <div className="shrink-0">
+          <PorfilePart />
+        </div>
       </div>
     </header>
   );
