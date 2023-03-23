@@ -14,8 +14,11 @@ function Header() {
   }, []);
 
   return (
-    <header ref={header} className="dark:bg-dark-500 sticky inset-0">
-      <div className="w-full flex justify-between px-5 py-4">
+    <header
+      ref={header}
+      className="dark:bg-dark-500 sticky inset-0 border-b-2 border-borderColor"
+    >
+      <div className="w-full flex justify-between px-6 py-4">
         <div className="grow flex items-center gap-x-8">
           <div className="flex items-center gap-x-2 cursor-default">
             <span className="dark:text-white w-6">

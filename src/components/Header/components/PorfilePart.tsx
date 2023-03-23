@@ -1,16 +1,25 @@
+import Chat from "@components/Icons/Chat";
 import CheckWithBg from "@components/Icons/CheckWithBg";
+import Notification from "@components/Icons/Notification";
 import Image from "next/image";
 import React from "react";
 
 function PorfilePart() {
   return (
-    <aside className="flex items-center gap-x-4">
+    <aside className="flex items-center gap-x-7 lg:pr-2">
       {/* Left Side --Start-- */}
-      <div className="flex items-center gap-x-3"></div>
+      <div className="flex items-center gap-x-2.5">
+        <button className="relative border-2 border-borderColor dark:text-white p-2 rounded-full dark:bg-dark-400">
+          <Chat />
+        </button>
+        <button className="relative border-2 border-borderColor dark:text-white p-2 rounded-full dark:bg-dark-400">
+          <Notification />
+        </button>
+      </div>
       {/* Left Side --End-- */}
 
       {/* User Profile --Start-- */}
-      <div className="flex items-center gap-x-2">
+      <div className="flex items-center gap-x-2 cursor-pointer">
         <p className="dark:text-white text-base tracking-wider">Red1 A</p>
         <div className="relative">
           <Image

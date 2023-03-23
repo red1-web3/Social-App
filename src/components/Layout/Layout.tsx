@@ -17,7 +17,7 @@ function Layout({
       <NavBar />
       <div className="ml-[350px]">
         <Header />
-        <main className="w-full min-h-screen px-8 p-5">
+        <main className="w-full min-h-screen px-10 py-5">
           {children}
           {isRightSideBar && (
             <div
