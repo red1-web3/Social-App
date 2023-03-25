@@ -7,3 +7,12 @@ body {
 
   /* color: #464646; */
 }
+
+._tranistionFunc {
+  transition-timing-function: cubic-bezier(
+    0.455,
+    0.03,
+    0.515,
+    0.955
+  ) !important;
+}

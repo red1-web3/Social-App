@@ -34,7 +34,7 @@ function Topbar() {
     const { height, left, width, top } =
       _anchor.current[i].getBoundingClientRect();
 
-    _activeAnchorBg.current.style.transition = "300ms";
+    _activeAnchorBg.current.style.transition = "400ms";
     _activeAnchorBg.current.style.transitionProperty = "all";
 
     setActive(i);
@@ -84,7 +84,7 @@ function Topbar() {
           height: backgroundProps.height,
           width: backgroundProps.width,
         }}
-        className="bg-dark-300 absolute mt-1 rounded-md z-[1] ease-in-out"
+        className="bg-dark-300 absolute _tranistionFunc mt-1 rounded-md z-[1]"
       ></li>
     </ul>
   );
