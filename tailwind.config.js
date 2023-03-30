@@ -12,6 +12,7 @@ module.exports = {
           300: "#34353E",
         },
         borderColor: "#27292D",
+        primary: "#187CC4",
       },
     },
   },

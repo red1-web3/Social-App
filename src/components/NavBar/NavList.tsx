@@ -1,13 +1,23 @@
 import Home from "@components/Icons/Home";
+import classNames from "classnames";
+import Link from "next/link";
 import React from "react";
 
-function NavList() {
+function NavList({ active }: { active?: boolean }) {
   return (
-    <div className="flex items-center gap-x-3">
-      <span className="w-5">
-        <Home />
-      </span>
-    </div>
+    <Link href={"#"}>
+      <div
+        className={classNames(
+          "flex items-center gap-x-3 px-4 py-3 rounded-md",
+          active ? "text-primary dark:bg-dark-400" : "dark:text-white "
+        )}
+      >
+        <span className="w-5">
+          <Home />
+        </span>
+        <span>Home</span>
+      </div>
+    </Link>
   );
 }
 

@@ -13,10 +13,10 @@ function NavBar() {
       className="fixed left-0 max-w-[350px] w-full h-full dark:bg-dark-500 border-r-2 border-borderColor"
     >
       <nav className="h-full w-full p-5">
-        <div className="mb-4">
+        <div className="mb-8">
           <Input />
         </div>
-        <NavList />
+        <NavList active={true} />
       </nav>
     </aside>
   );
