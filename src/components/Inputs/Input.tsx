@@ -1,3 +1,4 @@
+import Search from "@components/Icons/Search";
 import React from "react";
 
 function Input() {
@@ -5,8 +6,13 @@ function Input() {
     <div className="relative">
       <input
         type="text"
-        className="py-1.5 pl-8 pr-2 rounded border-2 border-gray-300"
+        className="py-2.5 pl-10 bg-transparent w-full pr-3 rounded border-2 border-gray-400/20 outline-none dark:text-white"
+        placeholder="Explore..."
       />
+
+      <span className="absolute left-3 top-1/2 -translate-y-1/2 dark:text-white/80">
+        <Search />
+      </span>
     </div>
   );
 }
