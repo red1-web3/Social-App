@@ -19,7 +19,7 @@ function Header() {
       className="dark:bg-dark-500 sticky inset-0 border-b-2 border-borderColor"
     >
       <div className="w-full flex justify-between px-6 py-4">
-        <div className="grow flex items-center gap-x-8">
+        <div className="grow flex items-center gap-x-14">
           <div className="flex items-center gap-x-2 cursor-default">
             <span className="dark:text-white w-6">
               <Home />

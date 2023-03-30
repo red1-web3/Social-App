@@ -6,7 +6,7 @@ import React from "react";
 
 function PorfilePart() {
   return (
-    <aside className="flex items-center gap-x-7 lg:pr-2">
+    <aside className="flex items-center gap-x-10 lg:pr-2">
       {/* Left Side --Start-- */}
       <div className="flex items-center gap-x-2.5">
         <button className="relative border-2 border-borderColor dark:text-white p-2 rounded-full dark:bg-dark-400">
