@@ -107,7 +107,7 @@ const Anchor = forwardRef(
         ref={ref}
         {...rest}
         className={classNames(
-          "px-5 py-1.5 cursor-pointer rounded-md select-none relative z-[2]",
+          "px-5 py-2 cursor-pointer rounded-md select-none relative z-[2]",
           className
         )}
       >

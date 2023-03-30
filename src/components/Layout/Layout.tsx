@@ -15,7 +15,7 @@ function Layout({
   return (
     <>
       <Header />
-      <div className="ml-[350px]">
+      <div className="ml-[320px]">
         <NavBar />
         <main className="w-full min-h-screen px-10 py-5">
           {children}
