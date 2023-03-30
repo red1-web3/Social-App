@@ -2,6 +2,7 @@ import Input from "@components/Inputs/Input";
 import Logo from "@components/Logo";
 import { useHeaderHeight } from "@state/index";
 import React from "react";
+import { navigationItems } from "src/constant/Navbar";
 import NavList from "./NavList";
 
 function NavBar() {
@@ -16,7 +17,10 @@ function NavBar() {
         <div className="mb-8">
           <Input />
         </div>
-        <NavList active={true} />
+
+        {navigationItems.map((data, i) => (
+          <NavList key={i} data={data} />
+        ))}
       </nav>
     </aside>
   );
