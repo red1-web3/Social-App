@@ -10,7 +10,7 @@ function NavList({ data: { label, logo, path } }: { data: NavItem }) {
 
   const active = router.pathname === path;
   return (
-    <Link href={"#"}>
+    <Link href={path}>
       <div
         className={classNames(
           "flex items-center gap-x-5 px-4 py-3 rounded-md",
