@@ -1,4 +1,5 @@
 import Home from "@components/Icons/Home";
+import Logo from "@components/Logo";
 import { useHeaderHeight } from "@state/index";
 import React, { useEffect, useRef } from "react";
 import PorfilePart from "./components/PorfilePart";
@@ -16,11 +17,12 @@ function Header() {
   return (
     <header
       ref={header}
-      className="dark:bg-dark-500 sticky inset-0 border-b-2 border-borderColor"
+      className="dark:bg-dark-500 sticky inset-0 border-b-2 border-borderColor z-[999]"
     >
       <div className="w-full flex justify-between px-6 py-4">
-        <div className="grow flex items-center gap-x-14">
-          <div className="flex items-center gap-x-2 cursor-default">
+        <Logo />
+        <div className="grow flex items-center gap-x-14 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <div className="flex items-center gap-x-4 cursor-default">
             <span className="dark:text-white w-6">
               <Home />
             </span>
