@@ -1,5 +1,5 @@
 import Header from "@components/Header";
-import NavBar from "@components/NavBar";
+import Sidebar from "@components/Sidebar";
 import { useHeaderHeight } from "@state/index";
 import React, { ReactNode } from "react";
 
@@ -16,7 +16,7 @@ function Layout({
     <>
       <Header />
       <div className="ml-[320px]">
-        <NavBar />
+        <Sidebar />
         <main className="w-full min-h-screen px-10 py-5">
           {children}
           {isRightSideBar && (
