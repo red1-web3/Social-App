@@ -46,7 +46,7 @@ function Navigations() {
     });
   }
   return (
-    <nav className="h-full w-full p-5">
+    <nav className="h-full w-full">
       <div className="mb-8">
         <Input />
       </div>
