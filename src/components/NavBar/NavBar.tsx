@@ -38,7 +38,7 @@ function NavBar() {
     const { height, left, top } = _list.current[i].getBoundingClientRect();
 
     setLocal(i.toString());
-    _activeListBg.current.style.transition = "400ms";
+    _activeListBg.current.style.transition = "200ms";
     _activeListBg.current.style.transitionProperty = "all";
 
     setBackgroundRect({
@@ -79,7 +79,7 @@ function NavBar() {
                 _listParent.current?.getBoundingClientRect().top,
               height: backgroundRect.height,
             }}
-            className="absolute left-0 w-full dark:bg-dark-400 rounded-md z-[1]"
+            className="absolute left-0 w-full dark:bg-dark-400 _tranistionFunc rounded-md z-[1]"
           ></div>
         </div>
       </nav>

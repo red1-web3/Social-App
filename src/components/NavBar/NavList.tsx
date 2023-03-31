@@ -21,12 +21,12 @@ const NavList = forwardRef(
           ref={ref}
           {...rest}
           className={classNames(
-            "flex items-center gap-x-5 px-4 py-3 rounded-md",
+            "flex items-center gap-x-5 px-4 py-3 rounded-md duration-200 _tranistionFunc",
             active ? "text-primary" : "dark:text-white "
           )}
         >
           <span className="w-5">{logo}</span>
-          <span className="duration-[400ms]">{label}</span>
+          <span>{label}</span>
         </div>
       </Link>
     );

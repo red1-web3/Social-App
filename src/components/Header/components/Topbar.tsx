@@ -34,7 +34,7 @@ function Topbar() {
     const { height, left, width, top } =
       _anchor.current[i].getBoundingClientRect();
 
-    _activeAnchorBg.current.style.transition = "400ms";
+    _activeAnchorBg.current.style.transition = "200ms";
     _activeAnchorBg.current.style.transitionProperty = "all";
 
     setActive(i);
