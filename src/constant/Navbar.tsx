@@ -20,6 +20,7 @@ export const navigationItems: NavItem[] = [
     label: "Marketplace",
     logo: <Suitcase />,
     path: "/marketplace",
+    newListing: 4,
   },
   {
     label: "Red1 Events",

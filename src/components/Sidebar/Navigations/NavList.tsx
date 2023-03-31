@@ -7,7 +7,7 @@ import { NavItem } from "src/models/Navbar";
 const NavList = forwardRef(
   (
     {
-      data: { label, logo, path },
+      data: { label, logo, path, newListing },
       ...rest
     }: { data: NavItem } & ComponentProps<"div">,
     ref: Ref<HTMLDivElement>
@@ -21,12 +21,21 @@ const NavList = forwardRef(
           ref={ref}
           {...rest}
           className={classNames(
-            "flex items-center gap-x-5 px-4 py-3 rounded-md duration-200 _tranistionFunc",
-            active ? "text-primary" : "dark:text-white "
+            "px-4 py-3 rounded-md duration-200 _tranistionFunc",
+            active ? "text-primary" : "dark:text-white",
+            newListing && "flex justify-between items-center"
           )}
         >
-          <span className="w-5">{logo}</span>
-          <span>{label}</span>
+          <div className="flex items-center gap-x-5 w-full">
+            <span className="w-5">{logo}</span>
+            <span>{label}</span>
+          </div>
+
+          {newListing && (
+            <div className="text-xs shrink-0 text-white rounded-3xl dark:bg-dark-400 px-3 py-1">
+              {newListing} new listing
+            </div>
+          )}
         </div>
       </Link>
     );
