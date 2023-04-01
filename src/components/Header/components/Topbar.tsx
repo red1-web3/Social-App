@@ -66,7 +66,7 @@ function Topbar() {
         <Anchor
           data={data}
           key={i}
-          onClick={() => clickAnchor(i)}
+          onMouseEnter={() => clickAnchor(i)}
           ref={(el) => {
             if (el !== null) {
               _anchor.current[i] = el;

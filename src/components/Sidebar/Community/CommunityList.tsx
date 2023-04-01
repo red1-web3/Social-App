@@ -4,11 +4,17 @@ import React from "react";
 function CommunityList() {
   return (
     <li className="flex items-center gap-x-4">
-      <div className="rounded-full overflow-hidden">
-        <Image src={"/community.jpg"} height={35} width={35} alt="Image" />
+      <div>
+        <Image
+          src={"/community.jpg"}
+          height={35}
+          width={35}
+          alt="Image"
+          className="object-cover rounded-full"
+        />
       </div>
 
-      <div>
+      <div className="translate-y-1">
         {/* Text */}
         <h2 className="text-sm font-medium dark:text-white text-primaryBlack leading-[14px]">
           Bangladeshi UI Designer
