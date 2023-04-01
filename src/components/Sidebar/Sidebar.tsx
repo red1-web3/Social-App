@@ -8,8 +8,8 @@ function Sidebar() {
 
   return (
     <aside
-      style={{ top: headerHeight }}
-      className="fixed left-0 max-w-[320px] w-full h-full dark:bg-dark-500 border-r-2 border-borderColor"
+      style={{ top: headerHeight, height: `calc(100vh - ${headerHeight}px)` }}
+      className="_sidebar fixed left-0 max-w-[320px] overflow-auto w-full dark:bg-dark-500 border-r-2 border-borderColor"
     >
       <div className="flex flex-col gap-6 p-5">
         <Navigations />
