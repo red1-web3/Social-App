@@ -31,3 +31,6 @@ body {
 ._sidebar::-webkit-scrollbar-thumb {
   background-color: #34353e;
 }
+._border {
+  @apply border-2 border-borderColor;
+}

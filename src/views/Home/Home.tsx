@@ -1,7 +1,12 @@
 import React from "react";
+import Post from "./Post/Post";
 
 const Home = () => {
-  return <div>Hello World!</div>;
+  return (
+    <>
+      <Post />
+    </>
+  );
 };
 
 export default Home;
