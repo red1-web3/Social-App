@@ -18,7 +18,7 @@ function CommunityList() {
 
         <div className="translate-y-1">
           {/* Text */}
-          <h2 className="text-sm font-medium dark:text-white text-primaryBlack leading-[14px]">
+          <h2 className="text-sm font-medium dark:text-white text-primaryBlack leading-[14px] line-clamp-1">
             Bangladeshi UI Designer
           </h2>
 

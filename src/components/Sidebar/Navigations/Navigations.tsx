@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useLocalStorage } from "react-use";
 import { navigationItems } from "src/constant/Navbar";
 import NavList from "./NavList";
+import { useRouter } from "next/router";
 
 interface BackgroundRect {
   height: number;
@@ -16,23 +17,29 @@ function Navigations() {
     left: 0,
     top: 0,
   });
-  const _list = useRef<HTMLDivElement[]>([]);
+  // const [pathname, setPathname] = useState<string>("");
+
+  const _list = useRef<HTMLButtonElement[]>([]);
   const _listParent = useRef<HTMLDivElement>(null!);
   const _activeListBg = useRef<HTMLDivElement>(null!);
   const [value, setLocal, remove] = useLocalStorage("my-key", "foo");
 
+  const router = useRouter();
+
   useEffect(() => {
-    const { height, left, top } =
-      _list.current[Number(value)].getBoundingClientRect();
+    const sidebarLink = document.getElementById(router.pathname);
+    if (!sidebarLink) return;
 
+    const linkRect = sidebarLink.getBoundingClientRect();
     setBackgroundRect({
-      height: height,
-      top: top,
-      left: left,
+      height: linkRect.height,
+      top: linkRect.top,
+      left: linkRect.left,
     });
-  }, []);
+  }, [router.pathname]);
 
-  function clickNavList(i: number) {
+  function clickNavList(i: number, path: string) {
+    router.push(path);
     const { height, left, top } = _list.current[i].getBoundingClientRect();
 
     setLocal(i.toString());
@@ -55,7 +62,7 @@ function Navigations() {
           <NavList
             key={i}
             data={data}
-            onClick={() => clickNavList(i)}
+            onClick={() => clickNavList(i, data.path)}
             ref={(el) => {
               if (el !== null) {
                 _list.current[i] = el;

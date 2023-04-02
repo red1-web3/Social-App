@@ -2,6 +2,7 @@ import { useHeaderHeight } from "@state/index";
 import React from "react";
 import Navigations from "./Navigations/Navigations";
 import Community from "./Community/Community";
+import UpComingEvents from "./UpComingEvents/UpComingEvents";
 
 function Sidebar() {
   const [headerHeight, setHeaderHeight] = useHeaderHeight();
@@ -16,6 +17,7 @@ function Sidebar() {
         <hr className="dark:border-gray-400/30" />
         <Community />
         <hr className="dark:border-gray-400/30" />
+        <UpComingEvents />
       </div>
     </aside>
   );

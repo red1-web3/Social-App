@@ -1,7 +1,7 @@
 import React from "react";
 import SectionHeader from "../SectionHeader";
 
-function UpComingEvent() {
+function UpComingEvents() {
   return (
     <div>
       <SectionHeader title="Up coming events" notification={17} />
@@ -9,4 +9,4 @@ function UpComingEvent() {
   );
 }
 
-export default UpComingEvent;
+export default UpComingEvents;
