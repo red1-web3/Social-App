@@ -7,7 +7,7 @@ function Community() {
     <div>
       <SectionHeader title="My community" notification={29} />
       <main>
-        <ul className="space-y-5">
+        <ul className="space-y-4">
           <CommunityList />
           <CommunityList />
           <CommunityList />

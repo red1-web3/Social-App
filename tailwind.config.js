@@ -15,6 +15,10 @@ module.exports = {
         primary: "#187CC4",
         primaryBlack: "#09090b",
       },
+
+      fontFamily: {
+        Lato: ["Lato", "sans-serif"],
+      },
     },
   },
   plugins: [],
