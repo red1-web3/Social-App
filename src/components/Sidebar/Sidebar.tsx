@@ -13,8 +13,9 @@ function Sidebar() {
     >
       <div className="flex flex-col gap-6 p-5">
         <Navigations />
-        <hr className="dark:border-gray-400/40" />
+        <hr className="dark:border-gray-400/30" />
         <Community />
+        <hr className="dark:border-gray-400/30" />
       </div>
     </aside>
   );
