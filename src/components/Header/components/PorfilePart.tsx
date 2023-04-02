@@ -29,7 +29,7 @@ function PorfilePart() {
             alt="Profile image"
             className="rounded-full"
           />
-          <span className="absolute inset-0 bg-black/20 rounded-full z-[1]"></span>
+          <span className="absolute inset-0 bg-black/40 rounded-full z-[1]"></span>
           <span className="dark:text-white absolute bottom-0 right-0.5 z-[2] w-3.5">
             <CheckWithBg />
           </span>
