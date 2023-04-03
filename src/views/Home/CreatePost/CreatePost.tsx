@@ -6,9 +6,9 @@ import { createPostIconData } from "src/constant/Post";
 
 function CreatePost() {
   return (
-    <main className="space-y-5">
+    <article className="rounded-md _border dark:bg-dark-500 p-3 space-y-5">
       {/* Header --Start-- */}
-      <div className="grid grid-cols-[40px,auto] gap-x-2.5 items-center">
+      <header className="grid grid-cols-[40px,auto] gap-x-2.5 items-center">
         <Link href={"#"} className="relative">
           <Image
             src={"/profile-img.jpg"}
@@ -27,7 +27,7 @@ function CreatePost() {
             placeholder="What's on your mind?"
           />
         </div>
-      </div>
+      </header>
       {/* Header --End-- */}
 
       {/* Footer --Start-- */}
@@ -56,7 +56,7 @@ function CreatePost() {
         {/* Submit Buttons --End-- */}
       </footer>
       {/* Footer --End-- */}
-    </main>
+    </article>
   );
 }
 
