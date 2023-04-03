@@ -14,7 +14,7 @@ function UpComingEventList() {
           <h2 className="text-sm font-medium dark:text-white text-primaryBlack line-clamp-1">
             Product Designer at Google Architech
           </h2>
-          <span className="text-xs dark:text-white/60 text-primaryBlack -translate-y-1 inline-block">
+          <span className="text-xs dark:text-primaryWhite text-primaryBlack -translate-y-1 inline-block">
             78k interested - 7k going
           </span>
         </div>

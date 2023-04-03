@@ -1,10 +1,13 @@
+import Edit from "@components/Icons/Edit";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { createPostIconData } from "src/constant/Post";
 
 function CreatePost() {
   return (
-    <header className="space-y-5">
+    <main className="space-y-5">
+      {/* Header --Start-- */}
       <div className="grid grid-cols-[40px,auto] gap-x-2.5 items-center">
         <Link href={"#"} className="relative">
           <Image
@@ -25,7 +28,35 @@ function CreatePost() {
           />
         </div>
       </div>
-    </header>
+      {/* Header --End-- */}
+
+      {/* Footer --Start-- */}
+      <footer className="flex items-center justify-between pl-2">
+        {/* Icons --Start-- */}
+        <ul className="flex items-center gap-x-3.5">
+          {createPostIconData.map(({ icon }, i) => (
+            <li key={i} className="dark:text-primaryWhite text-primaryBlack">
+              <button>{icon}</button>
+            </li>
+          ))}
+        </ul>
+        {/* Icons --End-- */}
+
+        {/* Submit Buttons --Start-- */}
+        <div className="flex items-center gap-x-4">
+          <button className="flex dark:text-primaryWhite text-primaryBlack items-center gap-x-1">
+            <Edit />
+            <span className="text-xs">Draft</span>
+          </button>
+
+          <button className="px-6 py-1 rounded _borderLight text-xs dark:text-primaryWhite text-primaryBlack">
+            Post
+          </button>
+        </div>
+        {/* Submit Buttons --End-- */}
+      </footer>
+      {/* Footer --End-- */}
+    </main>
   );
 }
 

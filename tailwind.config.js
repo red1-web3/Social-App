@@ -14,6 +14,7 @@ module.exports = {
         borderColor: "#27292D",
         primary: "#187CC4",
         primaryBlack: "#09090b",
+        primaryWhite: "#909090",
       },
 
       fontFamily: {

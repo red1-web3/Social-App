@@ -5,9 +5,9 @@
 @tailwind utilities;
 
 body {
-  @apply bg-dark-700 font-Lato
+  @apply bg-dark-700 font-Lato;
 
-  /* color: #464646; */;
+  /* color: #a5a5a5; */
 }
 
 ._tranistionFunc {
@@ -33,4 +33,7 @@ body {
 }
 ._border {
   @apply border-2 border-borderColor;
+}
+._borderLight {
+  @apply border-2 border-gray-400/20;
 }

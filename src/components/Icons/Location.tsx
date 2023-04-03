@@ -6,27 +6,13 @@ function Location() {
       stroke="currentColor"
       fill="currentColor"
       strokeWidth={0}
-      viewBox="0 0 512 512"
+      version="1.1"
+      viewBox="0 0 16 16"
       height="1em"
       width="1em"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        fill="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={32}
-        d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0025.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z"
-      />
-      <circle
-        cx={256}
-        cy={192}
-        r={48}
-        fill="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={32}
-      />
+      <path d="M8 0c-2.761 0-5 2.239-5 5 0 5 5 11 5 11s5-6 5-11c0-2.761-2.239-5-5-5zM8 8c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" />
     </svg>
   );
 }

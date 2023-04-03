@@ -22,7 +22,7 @@ const NavList = forwardRef(
         {...rest}
         className={classNames(
           "px-4 py-3 rounded-md duration-200 _tranistionFunc relative z-[2] block w-full",
-          active ? "text-primary" : "dark:text-white",
+          active ? "text-primary" : "dark:text-primaryWhite",
           newListing && "flex justify-between items-center"
         )}
       >
