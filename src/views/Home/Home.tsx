@@ -4,8 +4,9 @@ import CreatePost from "./CreatePost/CreatePost";
 
 const Home = () => {
   return (
-    <main>
+    <main className="space-y-4">
       <CreatePost />
+      <Post />
     </main>
   );
 };
