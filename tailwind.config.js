@@ -11,6 +11,11 @@ module.exports = {
           400: "#27282F",
           300: "#34353E",
         },
+        light: {
+          100: "#fafafa",
+          200: "#d2d3db",
+          700: "#8e8e8e",
+        },
         borderColor: "#27292D",
         primary: "#187CC4",
         primaryBlack: "#09090b",
