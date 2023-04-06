@@ -15,6 +15,10 @@ function Main() {
         />
       </div>
       {/* Post Main Image --End-- */}
+
+      <div className="grid grid-cols-3">
+        <button className="text-light-200"></button>
+      </div>
     </main>
   );
 }
