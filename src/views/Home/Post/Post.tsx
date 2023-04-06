@@ -4,7 +4,7 @@ import Main from "./Main/Main";
 
 function Post() {
   return (
-    <article className="rounded-md _border dark:bg-dark-500 p-3">
+    <article className="rounded-md _border dark:bg-dark-500 py-3">
       <Header />
       <Main />
     </article>
