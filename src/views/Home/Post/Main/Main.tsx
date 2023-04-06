@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Like from "./Buttons/Like";
 
 function Main() {
   return (
@@ -17,7 +18,7 @@ function Main() {
       {/* Post Main Image --End-- */}
 
       <div className="grid grid-cols-3">
-        <button className="text-light-200"></button>
+        <Like />
       </div>
     </main>
   );

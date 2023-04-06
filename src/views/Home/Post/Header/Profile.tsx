@@ -22,7 +22,7 @@ function Profile() {
             <span>12 minutes ago on</span>
           </p>
           <strong className="dark:text-light-200 text-primaryBlack text-xs">
-            3d stock contributor
+            3d Stock Contributor
           </strong>
         </div>
       </div>
