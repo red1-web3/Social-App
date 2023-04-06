@@ -16,7 +16,7 @@ function Layout({
     <>
       <Header />
       <Sidebar />
-      <div className="ml-[320px] mr-[352px]">
+      <div className="ml-[320px] mr-[352px] max-w-[1500px]">
         <main className="w-full min-h-screen px-10 py-5">
           {children}
           {isRightSideBar && (
