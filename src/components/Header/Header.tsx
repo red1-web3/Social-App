@@ -17,7 +17,7 @@ function Header() {
   return (
     <header
       ref={header}
-      className="dark:bg-dark-500 sticky inset-0 border-b-2 border-borderColor z-[999]"
+      className="dark:bg-dark-500 fixed top-0 left-0 w-full border-b-2 border-borderColor z-[999]"
     >
       <div className="w-full flex justify-between px-6 py-4">
         <Logo />

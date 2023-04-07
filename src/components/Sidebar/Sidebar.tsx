@@ -8,9 +8,9 @@ function Sidebar() {
   const [headerHeight, setHeaderHeight] = useHeaderHeight();
 
   return (
-    <aside
+    <div
       style={{ top: headerHeight, height: `calc(100vh - ${headerHeight}px)` }}
-      className="_sidebar fixed left-0 max-w-[320px] overflow-auto w-full dark:bg-dark-500 border-r-2 border-borderColor"
+      className="_sidebar sticky left-0 overflow-auto dark:bg-dark-500 border-r-2 border-borderColor"
     >
       <div className="flex flex-col gap-6 p-5">
         <Navigations />
@@ -19,7 +19,7 @@ function Sidebar() {
         <hr className="dark:border-gray-400/30" />
         <UpComingEvents />
       </div>
-    </aside>
+    </div>
   );
 }
 

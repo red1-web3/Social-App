@@ -19,7 +19,7 @@ function Button({
     >
       <div
         className={classNames(
-          "w-fit flex items-center gap-x-1 text-sm",
+          "w-fit flex items-center gap-x-1.5 text-sm",
           activeColor ? "text-primary" : "dark:text-light-700"
         )}
       >
@@ -29,7 +29,7 @@ function Button({
 
       <div
         className={classNames(
-          "px-2.5 py-0.5 rounded-2xl text-xs text-light-200",
+          "px-2 py-0.5 rounded-2xl text-xs text-light-200",
           activeColor ? "bg-primary" : "bg-dark-300"
         )}
       >

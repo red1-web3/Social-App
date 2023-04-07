@@ -29,7 +29,7 @@ export const createPostIconData: CreatePostIconProps[] = [
 export const buttons: Button[] = [
   {
     icon: <ThumbUp />,
-    label: "Like",
+    label: "Like post",
     count: "1.7k",
     activeColor: true,
   },

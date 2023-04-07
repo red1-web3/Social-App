@@ -15,17 +15,28 @@ function Layout({
   return (
     <>
       <Header />
-      <Sidebar />
-      <div className="ml-[320px] mr-[352px] max-w-[1500px]">
-        <main className="w-full min-h-screen px-10 py-5">
-          {children}
-          {isRightSideBar && (
-            <div
-              style={{ marginTop: headerHeight + 20 }}
-              className="fixed right-8 top-0 w-[320px] h-full bg-white dark:bg-dark-500"
-            ></div>
-          )}
-        </main>
+      <div className="container">
+        <div className="grid grid-cols-[2fr,6fr,2fr+40px]">
+          <aside>
+            <Sidebar />
+          </aside>
+          <main className="w-full min-h-screen px-10 mt-8">{children}</main>
+          {isRightSideBar ? (
+            <aside>
+              <div
+                className="sticky right-0 pt-8"
+                style={{
+                  top: headerHeight,
+                  height: `calc(100vh - ${headerHeight}px)`,
+                }}
+              >
+                <div className="dark:bg-dark-500 w-full h-full">
+                  {/* Content Here */}
+                </div>
+              </div>
+            </aside>
+          ) : null}
+        </div>
       </div>
     </>
   );
