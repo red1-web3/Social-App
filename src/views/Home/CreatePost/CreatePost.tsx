@@ -23,7 +23,7 @@ function CreatePost() {
         <div>
           <input
             type="text"
-            className="w-full dark:bg-dark-400 outline-none dark:text-slate-200 text-black placeholder:opacity-50 rounded-full py-2 px-5"
+            className="w-full dark:bg-dark-400 outline-none dark:text-slate-200 text-black placeholder:opacity-50 rounded-full py-2.5 pr-5 pl-6"
             placeholder="What's on your mind?"
           />
         </div>
