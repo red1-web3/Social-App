@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import Like from "./Buttons/Like";
+import Button from "./Buttons/Button";
+import { buttons } from "src/constant/Post";
 
 function Main() {
   return (
@@ -17,8 +18,16 @@ function Main() {
       </div>
       {/* Post Main Image --End-- */}
 
-      <div className="grid grid-cols-3">
-        <Like />
+      <div className="grid grid-cols-3 border-b-2 _border">
+        {buttons.map(({ count, icon, label, activeColor }, i) => (
+          <Button
+            key={i}
+            count={count}
+            icon={icon}
+            label={label}
+            activeColor={activeColor}
+          />
+        ))}
       </div>
     </main>
   );

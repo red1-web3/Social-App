@@ -7,8 +7,8 @@ function Share() {
       fill="currentColor"
       strokeWidth={0}
       viewBox="0 0 512 512"
-      height="1em"
-      width="1em"
+      height="100%"
+      width="100%"
       xmlns="http://www.w3.org/2000/svg"
     >
       <circle

@@ -7,8 +7,8 @@ function Comment() {
       fill="currentColor"
       strokeWidth={0}
       viewBox="0 0 24 24"
-      height="1em"
-      width="1em"
+      height="100%"
+      width="100%"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path d="M7 7h10v2H7zm0 4h7v2H7z" />
