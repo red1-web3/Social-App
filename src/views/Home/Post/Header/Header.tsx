@@ -8,11 +8,11 @@ function Header() {
     <header className="space-y-3.5 pb-4 px-4">
       <div className="flex justify-between w-full">
         <Profile />
-        <div className="flex items-center gap-x-3">
-          <button className="w-5 dark:text-dark-100 dark:hover:text-dark-50 duration-200 text-primaryBlack">
+        <div className="flex items-center gap-x-2">
+          <button className="w-6 dark:text-dark-100 dark:hover:text-dark-50 duration-200 text-primaryBlack">
             <Bookmark />
           </button>
-          <button className="w-5 dark:text-dark-100 dark:hover:text-dark-50 duration-200 text-primaryBlack">
+          <button className="w-6 dark:text-dark-100 dark:hover:text-dark-50 duration-200 text-primaryBlack">
             <Dots />
           </button>
         </div>
