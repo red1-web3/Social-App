@@ -44,3 +44,19 @@ export const buttons: Button[] = [
     count: "11",
   },
 ];
+
+export const writeCommentIcon: CreatePostIconProps[] = [
+  {
+    icon: <Camera />,
+  },
+  {
+    icon: <Image />,
+  },
+  {
+    icon: <Attach />,
+  },
+
+  {
+    icon: <Smile />,
+  },
+];
