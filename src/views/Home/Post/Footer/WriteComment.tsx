@@ -6,7 +6,7 @@ import { writeCommentIcon } from "src/constant/Post";
 
 function WriteComment() {
   return (
-    <div className="grid grid-cols-[40px,auto] gap-x-2.5 items-center py-4">
+    <div className="grid grid-cols-[40px,auto] gap-x-2.5 items-center py-4 mb-1">
       <Link href={"#"} className="relative">
         <Image
           src={"/profile-img.jpg"}

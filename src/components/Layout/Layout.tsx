@@ -20,7 +20,7 @@ function Layout({
           <aside>
             <Sidebar />
           </aside>
-          <main className="w-full min-h-screen px-10 mt-8">{children}</main>
+          <main className="w-full min-h-screen px-10 my-8">{children}</main>
           {isRightSideBar ? (
             <aside>
               <div

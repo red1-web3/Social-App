@@ -13,7 +13,9 @@ function Profile() {
         className="rounded-full"
       />
       <div>
-        <h3 className="dark:text-light-200 text-primaryBlack">Amile jackson</h3>
+        <h3 className="dark:text-light-200 text-primaryBlack font-semibold">
+          Amile jackson
+        </h3>
         <div className="flex items-center gap-x-1">
           <p className="flex items-center text-sm dark:text-light-700 gap-x-1">
             <span className="translate-y-[1px]">
