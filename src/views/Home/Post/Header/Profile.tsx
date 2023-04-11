@@ -15,13 +15,13 @@ function Profile() {
       <div>
         <h3 className="dark:text-light-200 text-primaryBlack">Amile jackson</h3>
         <div className="flex items-center gap-x-1">
-          <p className="flex items-center text-xs dark:text-light-700 gap-x-1">
+          <p className="flex items-center text-sm dark:text-light-700 gap-x-1">
             <span className="translate-y-[1px]">
               <Time />
             </span>
             <span>12 minutes ago on</span>
           </p>
-          <strong className="dark:text-light-200 text-primaryBlack text-xs">
+          <strong className="dark:text-light-200 text-primaryBlack text-sm">
             3d Stock Contributor
           </strong>
         </div>

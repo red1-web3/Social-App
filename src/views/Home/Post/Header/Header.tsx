@@ -20,7 +20,7 @@ function Header() {
 
       {/* Description --Start-- */}
       <div>
-        <p className="text-sm dark:text-light-200 text-primaryBlack tracking-wide">
+        <p className="text-base dark:text-light-200 text-primaryBlack tracking-wide">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
           porro a consequatur sapiente suscipit quaerat explicabo libero
           voluptate quibusdam, tempore, debitis dolor eveniet, vero rerum.

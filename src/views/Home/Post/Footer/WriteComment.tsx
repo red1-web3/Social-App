@@ -34,11 +34,11 @@ function WriteComment() {
         </button> */}
         {/* Send button --End-- */}
 
-        <ul className="flex items-center gap-x-3.5 absolute top-1/2 -translate-y-1/2 right-5">
+        <ul className="flex items-center gap-x-4 absolute top-1/2 -translate-y-1/2 right-5">
           {writeCommentIcon.map(({ icon }, i) => (
             <li
               key={i}
-              className="dark:text-dark-100 dark:hover:text-dark-50 duration-200 text-primaryBlack"
+              className="dark:text-dark-100 leading-3 dark:hover:text-dark-50 duration-200 text-primaryBlack"
             >
               <button>{icon}</button>
             </li>
