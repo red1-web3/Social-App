@@ -76,7 +76,7 @@ function Navigations() {
           style={{
             top:
               backgroundRect.top -
-              _listParent.current?.getBoundingClientRect().top,
+                _listParent.current?.getBoundingClientRect().top || 0,
             height: backgroundRect.height,
           }}
           className="absolute left-0 w-full dark:bg-dark-400 _tranistionFunc rounded-md z-[1]"

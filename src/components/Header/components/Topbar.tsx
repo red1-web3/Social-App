@@ -80,7 +80,7 @@ function Topbar() {
           top: 0,
           left:
             backgroundProps.left -
-            _anchorParent.current?.getBoundingClientRect().left,
+              _anchorParent.current?.getBoundingClientRect().left || 0,
           height: backgroundProps.height,
           width: backgroundProps.width,
         }}
