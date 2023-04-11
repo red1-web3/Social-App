@@ -14,13 +14,13 @@ function Button({
 }) {
   return (
     <button
-      className="text-light-200 py-4 flex justify-center items-center gap-x-2"
+      className="dark:text-dark-100 dark:hover:text-dark-50 duration-200 py-4 flex justify-center items-center gap-x-2"
       // onClick={clickedLike}
     >
       <div
         className={classNames(
           "w-fit flex items-center gap-x-1.5 text-sm",
-          activeColor ? "text-primary" : "dark:text-light-700"
+          activeColor && "text-primary"
         )}
       >
         <span className="w-5">{icon}</span>

@@ -1,3 +1,4 @@
+import Send from "@components/Icons/Send";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -16,12 +17,23 @@ function WriteComment() {
         <span className="absolute inset-0 bg-black/30 rounded-full z-[1]"></span>
       </Link>
 
-      <div>
+      <div className="relative rounded-full overflow-hidden">
         <input
           type="text"
-          className="w-full dark:bg-dark-400 outline-none dark:text-slate-200 text-black placeholder:opacity-50 rounded-full py-2.5 pr-5 pl-6"
+          className="peer w-full dark:bg-dark-400 outline-none dark:text-slate-200 text-black placeholder:opacity-50 py-2.5 pr-5 pl-6"
           placeholder="What's on your mind?"
         />
+
+        {/* Send button --Start-- */}
+
+        <button
+          name="submitComment"
+          className="absolute top-1/2 -translate-y-1/2 right-3 w-[22px] dark:text-dark-100 dark:hover:text-dark-50 duration-200"
+        >
+          <Send />
+        </button>
+
+        {/* Send button --End-- */}
       </div>
     </div>
   );
