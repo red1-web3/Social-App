@@ -1,5 +1,6 @@
 import Layout from "@components/Layout";
 import Home from "@views/Home";
+import RightSidebar from "@views/Home/RightSidebar/RightSidebar";
 import Head from "next/head";
 import { ReactElement } from "react";
 import { NextPageWithLayout } from "src/models/Global";
@@ -22,7 +23,7 @@ const HomePage: NextPageWithLayout = () => {
 
 HomePage.getLayout = function getLayout(page: ReactElement) {
   return (
-    <Layout isRightSideBar>
+    <Layout isRightSideBar={<RightSidebar />}>
       <div>{page}</div>
     </Layout>
   );

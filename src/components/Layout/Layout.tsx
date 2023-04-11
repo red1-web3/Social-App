@@ -8,7 +8,7 @@ function Layout({
   isRightSideBar = false,
 }: {
   children: ReactNode;
-  isRightSideBar?: boolean;
+  isRightSideBar?: boolean | ReactNode;
 }) {
   const [headerHeight, setHeaderHeight] = useHeaderHeight();
 
@@ -17,7 +17,7 @@ function Layout({
       <Header />
       <div className="container">
         <div className="grid grid-cols-[2fr,6fr,2fr+40px]">
-          <aside>
+          <aside className="bg-dark-600">
             <Sidebar />
           </aside>
           <main className="w-full min-h-screen px-10 my-8">{children}</main>
@@ -30,8 +30,9 @@ function Layout({
                   height: `calc(100vh - ${headerHeight}px)`,
                 }}
               >
-                <div className="dark:bg-dark-500 w-full h-full">
+                <div className="dark:bg-dark-600 w-full h-full rounded-md _border">
                   {/* Content Here */}
+                  {isRightSideBar}
                 </div>
               </div>
             </aside>
