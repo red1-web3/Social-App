@@ -35,7 +35,10 @@ function CreatePost() {
         {/* Icons --Start-- */}
         <ul className="flex items-center gap-x-3.5">
           {createPostIconData.map(({ icon }, i) => (
-            <li key={i} className="dark:text-primaryWhite text-primaryBlack">
+            <li
+              key={i}
+              className="dark:text-dark-100 dark:hover:text-dark-50 duration-200 text-primaryBlack"
+            >
               <button>{icon}</button>
             </li>
           ))}
@@ -44,12 +47,12 @@ function CreatePost() {
 
         {/* Submit Buttons --Start-- */}
         <div className="flex items-center gap-x-4">
-          <button className="flex dark:text-primaryWhite text-primaryBlack items-center gap-x-1">
+          <button className="flex dark:text-dark-50 text-primaryBlack items-center gap-x-1.5">
             <Edit />
-            <span className="text-xs">Draft</span>
+            <span className="text-sm">Draft</span>
           </button>
 
-          <button className="px-6 py-1 rounded _borderLight text-xs dark:text-primaryWhite text-primaryBlack">
+          <button className="px-6 py-1 rounded _borderLight text-sm dark:text-dark-50 text-primaryBlack">
             Post
           </button>
         </div>

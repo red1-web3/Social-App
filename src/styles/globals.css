@@ -13,7 +13,7 @@
 body {
   @apply bg-dark-700 font-Lato;
 
-  /* color: #eaeaea; */
+  /* color: #696c87; */
 }
 
 ._tranistionFunc {
@@ -41,5 +41,5 @@ body {
   @apply border-2 border-borderColor;
 }
 ._borderLight {
-  @apply border-2 border-gray-400/20;
+  @apply border-2 border-gray-400/20 duration-200 hover:border-gray-400/50;
 }
