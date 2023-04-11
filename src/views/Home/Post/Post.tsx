@@ -5,7 +5,7 @@ import Footer from "./Footer/Footer";
 
 function Post() {
   return (
-    <article className="rounded-md _border dark:bg-dark-500 pt-3">
+    <article className="rounded-md _border dark:bg-dark-500 pt-4">
       <Header />
       <Main />
       <Footer />

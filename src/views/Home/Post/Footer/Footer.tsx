@@ -5,7 +5,7 @@ import ViewComments from "./Comments/ViewComments";
 
 function Footer() {
   return (
-    <footer className="px-3">
+    <footer className="px-4">
       <WriteComment />
       <Comments />
       <ViewComments />

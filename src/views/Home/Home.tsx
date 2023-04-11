@@ -10,6 +10,9 @@ const Home = () => {
     <main style={{ marginTop: headerHeight }} className="space-y-4">
       <CreatePost />
       <Post />
+      <Post />
+      <Post />
+      <Post />
     </main>
   );
 };

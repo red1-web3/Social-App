@@ -5,7 +5,7 @@ import Dots from "@components/Icons/Dots";
 
 function Header() {
   return (
-    <header className="space-y-3.5 pb-4 px-3">
+    <header className="space-y-3.5 pb-4 px-4">
       <div className="flex justify-between w-full">
         <Profile />
         <div className="flex items-center gap-x-3">
