@@ -30,7 +30,7 @@ function Layout({
                   height: `calc(100vh - ${headerHeight}px)`,
                 }}
               >
-                <div className="dark:bg-dark-600 w-full h-full rounded-md _border">
+                <div className="w-full h-full">
                   {/* Content Here */}
                   {isRightSideBar}
                 </div>

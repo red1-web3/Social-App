@@ -29,7 +29,7 @@ function Button({
 
       <div
         className={classNames(
-          "px-2 py-0.5 rounded-2xl text-xs text-light-200",
+          "px-2 py-0.5 rounded-2xl text-xs text-light-200 !font-Lato",
           activeColor ? "bg-primary" : "bg-dark-300"
         )}
       >

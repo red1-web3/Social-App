@@ -23,7 +23,7 @@ export const navigationItems: NavItem[] = [
     newListing: 4,
   },
   {
-    label: "Red1 Events",
+    label: "Events",
     logo: <Event />,
     path: "/events",
   },

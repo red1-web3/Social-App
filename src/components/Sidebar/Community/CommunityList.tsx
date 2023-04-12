@@ -18,11 +18,11 @@ function CommunityList() {
 
         <div className="translate-y-1">
           {/* Text */}
-          <h2 className="dark:text-light-400 text-primaryBlack line-clamp-1">
+          <h2 className="dark:text-light-400 text-primaryBlack line-clamp-1 font-semibold">
             Bangladeshi UI Designer
           </h2>
           <span className="text-xs dark:text-primaryWhite text-primaryBlack -translate-y-1 inline-block">
-            462 members
+            <span className="font-Lato">462</span> members
           </span>
         </div>
       </Link>

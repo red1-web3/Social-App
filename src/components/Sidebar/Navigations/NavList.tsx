@@ -28,7 +28,7 @@ const NavList = forwardRef(
       >
         <div className="flex items-center gap-x-5 w-full">
           <span className="w-5">{logo}</span>
-          <span>{label}</span>
+          <span className="font-semibold">{label}</span>
         </div>
 
         {newListing && (

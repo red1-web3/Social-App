@@ -1,7 +1,12 @@
 import React from "react";
+import Trending from "./Trending/Trending";
 
 function RightSidebar() {
-  return <div>RightSidebar</div>;
+  return (
+    <>
+      <Trending />
+    </>
+  );
 }
 
 export default RightSidebar;

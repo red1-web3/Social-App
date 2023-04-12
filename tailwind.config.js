@@ -27,7 +27,7 @@ module.exports = {
       },
 
       fontFamily: {
-        Lato: ["Lato", "sans-serif"],
+        Sarabun: ["Sarabun", "sans-serif"],
       },
     },
   },
