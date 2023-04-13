@@ -21,22 +21,21 @@ function Layout({
             <Sidebar />
           </aside>
           <main className="w-full min-h-screen px-10 my-8">{children}</main>
-          {isRightSideBar ? (
-            <aside>
-              <div
-                className="sticky right-0 pt-8"
-                style={{
-                  top: headerHeight,
-                  height: `calc(100vh - ${headerHeight}px)`,
-                }}
-              >
-                <div className="w-full h-full">
-                  {/* Content Here */}
-                  {isRightSideBar}
-                </div>
+
+          <aside className="h-screen">
+            <div
+              className="sticky right-0 pt-8 bg-red-500"
+              style={{
+                top: headerHeight,
+                height: `calc(100vh - ${headerHeight}px)`,
+              }}
+            >
+              <div className="w-full h-full">
+                {/* Content Here */}
+                {isRightSideBar}
               </div>
-            </aside>
-          ) : null}
+            </div>
+          </aside>
         </div>
       </div>
     </>

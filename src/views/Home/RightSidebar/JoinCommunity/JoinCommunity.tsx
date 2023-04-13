@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-function SingleCommunity() {
+function JoinCommunity() {
   return (
     <div className="_border rounded-md dark:bg-dark-600">
       {/* Image section --Start-- */}
@@ -35,4 +35,4 @@ function SingleCommunity() {
   );
 }
 
-export default SingleCommunity;
+export default JoinCommunity;
