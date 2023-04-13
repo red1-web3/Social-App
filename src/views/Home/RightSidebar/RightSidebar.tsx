@@ -7,8 +7,6 @@ function RightSidebar() {
     <div className="space-y-5">
       <Trending />
       <SingleCommunity />
-      <SingleCommunity />
-      <SingleCommunity />
     </div>
   );
 }

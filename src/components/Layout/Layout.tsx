@@ -24,7 +24,7 @@ function Layout({
 
           <aside className="h-screen">
             <div
-              className="sticky right-0 pt-8 bg-red-500"
+              className="sticky right-0 pt-8"
               style={{
                 top: headerHeight,
                 height: `calc(100vh - ${headerHeight}px)`,
