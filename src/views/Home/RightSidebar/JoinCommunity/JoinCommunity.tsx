@@ -17,7 +17,7 @@ function JoinCommunity() {
       {/* Image section --End-- */}
 
       {/* Footer part --Start-- */}
-      <div className="px-3 py-3 space-y-3">
+      <div className="px-3 py-3.5 space-y-3">
         <div>
           <h5 className="dark:text-light-200 text-primaryBlack text-sm font-medium">
             Figma Designer
