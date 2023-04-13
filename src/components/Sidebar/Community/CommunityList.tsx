@@ -22,7 +22,7 @@ function CommunityList() {
             Bangladeshi UI Designer
           </h2>
           <span className="text-xs dark:text-primaryWhite text-primaryBlack -translate-y-1 inline-block">
-            <span className="font-Lato">462</span> members
+            463 members
           </span>
         </div>
       </Link>
