@@ -16,7 +16,7 @@ function Layout({
     <>
       <Header />
       <div className="container">
-        <div className="grid grid-cols-[2fr,6fr,2fr+40px]">
+        <div className="grid grid-cols-[2fr,6fr,1.7fr+40px]">
           <aside className="bg-dark-600">
             <Sidebar />
           </aside>
