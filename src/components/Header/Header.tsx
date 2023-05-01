@@ -1,7 +1,7 @@
 import Home from "@components/Icons/Home";
 import Logo from "@components/Logo";
 import { useHeaderHeight } from "@state/index";
-import React, { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import PorfilePart from "./components/PorfilePart";
 import Topbar from "./components/Topbar";
 
@@ -9,7 +9,7 @@ function Header() {
   const header = useRef<HTMLElement>(null!);
   const [headerHeight, setHeaderHeight] = useHeaderHeight();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setHeaderHeight(header.current.clientHeight);
     return () => {};
   }, []);
