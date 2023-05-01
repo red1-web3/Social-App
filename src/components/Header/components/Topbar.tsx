@@ -1,5 +1,4 @@
 import { cxm } from "@utils/index";
-import classNames from "classnames";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
@@ -13,8 +12,9 @@ function Topbar() {
       {topBarData.map(({ label }, i) => (
         <li
           onClick={() => setActive(i)}
-          className={classNames(
-            "relative px-5 cursor-pointer rounded-md select-none"
+          className={cxm(
+            "relative px-5 cursor-pointer rounded-md select-none duration-[600ms] hover:bg-dark-300 font-medium dark:text-light-400",
+            active === i && "!text-white"
           )}
         >
           <Link href={"#"} className="relative z-10">
@@ -33,11 +33,8 @@ const ActiveBg = ({ className }: { className?: string }) => {
   return (
     <motion.div
       transition={{ type: "spring", duration: 0.6 }}
-      layoutId="activeLine"
-      className={cxm(
-        "absolute w-full inset-0 bg-primary rounded-md",
-        className
-      )}
+      layoutId="activeTopbar"
+      className={cxm("absolute inset-0 bg-primary rounded-md", className)}
     />
   );
 };
