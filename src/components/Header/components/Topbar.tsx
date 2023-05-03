@@ -11,6 +11,7 @@ function Topbar() {
     <ul className="relative flex items-center gap-x-3 dark:text-white text-sm dark:bg-dark-400 p-1 rounded-md">
       {topBarData.map(({ label }, i) => (
         <li
+          key={i}
           onClick={() => setActive(i)}
           className={cxm(
             "relative px-5 cursor-pointer rounded-md select-none duration-[600ms] hover:bg-dark-300 font-medium dark:text-light-400",

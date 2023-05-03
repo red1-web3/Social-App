@@ -1,8 +1,16 @@
-import React from "react";
+import { motion } from "framer-motion";
 
-function TrendingList() {
+function TrendingList({ index }: { index: number }) {
   return (
-    <li className="flex justify-between items-center py-1">
+    <motion.li
+      initial={{ y: -20, opacity: 0 }}
+      animate={{ x: 0, y: 0, opacity: 1, transition: { delay: index * 0.05 } }}
+      exit={{
+        opacity: 0,
+        transition: { delay: 0, duration: 0.1 },
+      }}
+      className="flex justify-between items-center py-1"
+    >
       <div>
         <h5 className="dark:text-light-200 text-primaryBlack font-medium">
           Figma maintenance
@@ -15,7 +23,7 @@ function TrendingList() {
       <span className="text-xs text-light-400 bg-dark-400 px-2 py-0.5 rounded-md">
         65 in 1 hour
       </span>
-    </li>
+    </motion.li>
   );
 }
 
