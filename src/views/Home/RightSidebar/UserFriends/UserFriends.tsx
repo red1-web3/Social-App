@@ -1,23 +1,17 @@
-import ChevronDown from "@components/Icons/ChevronDown";
-import React from "react";
+import DropdownWrapper from "@components/Dropdown/Dropdown";
+import DropdownList from "@components/Dropdown/DropdownList";
 import UserFriendsList from "./UserFriendsList";
 
 function UserFriends() {
   return (
     <div className="_border rounded-md dark:bg-dark-600">
-      <button className="flex items-center justify-between dark:text-light-200 w-full py-2.5 px-3.5">
-        <h5 className="font-medium text-lg">My Friends</h5>
-        <span>
-          <ChevronDown />
-        </span>
-      </button>
-
-      <ul className="px-3.5">
-        <UserFriendsList />
-        <UserFriendsList />
-        <UserFriendsList />
-        <UserFriendsList />
-      </ul>
+      <DropdownWrapper label="My Friends">
+        {[1, 2, 3, 4].map((_, i) => (
+          <DropdownList key={i} index={i}>
+            <UserFriendsList />
+          </DropdownList>
+        ))}
+      </DropdownWrapper>
     </div>
   );
 }

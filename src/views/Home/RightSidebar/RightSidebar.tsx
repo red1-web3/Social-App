@@ -1,6 +1,5 @@
-import React from "react";
-import Trending from "./Trending/Trending";
 import SingleCommunity from "./JoinCommunity/JoinCommunity";
+import Trending from "./Trending/Trending";
 import UserFriends from "./UserFriends/UserFriends";
 
 function RightSidebar() {
